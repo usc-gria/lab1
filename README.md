@@ -24,9 +24,9 @@ Se debe crear un catálogo de canciones usando una lista de diccionarios. Cada d
 #### **Tareas:**
 1. Crear una función `agregar_cancion (titulo, artista, album, duracion)` para añadir nuevas canciones al catálogo.
 2. Crear una función `eliminar_cancion (id)` para eliminar canciones por su ID.
-3. Crear una función `buscar_cancion (id)` para buscar canciones por ID.
-4. Crear una función `buscar_cancion (titulo)` para buscar canción por título.
-5. Crear una función `buscar_cancion (artista)` para buscar las canciones de un artísta.
+3. Crear una función `buscar_cancion_por_id(id)` para buscar canciones por ID.
+4. Crear una función `buscar_canciones_por_titulo(titulo)` para buscar canciones por título (dos canciones pueden tener el mismo título).
+5. Crear una función `buscar_canciones_por_artista(artista)` para buscar las canciones de un artísta.
 
 ---
 
@@ -49,7 +49,7 @@ Es obligatorio usar al menos una vez el operador `lambda`. Tienes ejemplos en el
 
 ---
 
-### **4. Desafío Final**
+### **4. Menú Principal**
 #### **Descripción:**
 Combinar todas las funcionalidades anteriores para crear un menú interactivo que permita al usuario:
 
@@ -59,24 +59,25 @@ Combinar todas las funcionalidades anteriores para crear un menú interactivo qu
 
 #### **Ejemplo de Menú:**
 ```python
-while True:
+opcion = 0
+while opcion != 4:
     print("\nSistema de Música en Streaming")
     print("1. Gestionar Catálogo")
     print("2. Consultar Estadísticas")
     print("3. Aplicar Filtros")
     print("4. Salir")
-    opcion = input("Seleccione una opción: ")
+    opcion = int(input("Seleccione una opción: "))
 
-    if opcion == "1":
+    if opcion == 1:
         # Llamar a funciones de gestión de catálogo
         pass
-    elif opcion == "2":
+    elif opcion == 2:
         # Llamar a funciones de estadísticas
         pass
-    elif opcion == "3":
+    elif opcion == 3:
         # Llamar a funciones de programación funcional
         pass
-    elif opcion == "4":
+    elif opcion == 4:
         print("Saliendo del sistema.")
         break
     else:
@@ -94,5 +95,15 @@ while True:
 4. **Interactividad:** Implementación de un menú funcional que integre todas las tareas.
 
 ### **Criterios específicos evaluables:**
-- [ ] 
+
+- [ ] El catálogo debe estar correctamente estructurado con la información necesaria para cada canción.  
+- [ ] La función de agregar canciones debe permitir añadir nuevas canciones al catálogo de forma correcta (no se permiten duplicados, mismo título y artista).  
+- [ ] La función de eliminar canciones debe permitir eliminar canciones sin afectar la integridad de los datos.  
+- [ ] La función de búsqueda debe permitir encontrar canciones por diferentes criterios y devolver resultados adecuados.  
+- [ ] La función de reproducción debe actualizar correctamente la cantidad de veces que una canción ha sido reproducida.  
+- [ ] La función de cálculo de duración total debe sumar correctamente la duración de todas las canciones.  
+- [ ] La función para obtener las canciones más reproducidas debe devolver correctamente los resultados.  
+- [ ] La función de filtrado debe permitir obtener solo las canciones que cumplan con un criterio de duración.  
+- [ ] La función de transformación debe aplicar correctamente la conversión de títulos a mayúsculas.  
+- [ ] La función de ordenación debe permitir ordenar las canciones por duración de forma correcta.  
 

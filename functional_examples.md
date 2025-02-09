@@ -1,9 +1,3 @@
-
-
-
-
-
-
 # Ejemplos de programación funcional
 
 ## map
