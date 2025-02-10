@@ -1,6 +1,6 @@
 name: Autograding Tests
 'on':
-- push
+- workflow_dispatch
 - repository_dispatch
 permissions:
   checks: write
@@ -13,7 +13,7 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-    - name: Download testsx
+    - name: Download tests
       run: |
         curl -o lab1_test.py https://nextcloud.citius.usc.es/s/4WLgdpcnzs9bp6g/download/test_lab1.py
     - name: test
