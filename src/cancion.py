@@ -1,10 +1,10 @@
 
-def agregar_cancion(titulo, artista, album, duracion):
+def agregar_cancion(catalogo,titulo, artista, album, duracion):
 
-def eliminar_cancion(id):
+def eliminar_cancion(catalogo,id):
 
-def buscar_cancion_por_id(id):
+def buscar_cancion_por_id(catalogo,id):
 
-def buscar_cancion_por_titulo(titulo):
+def buscar_cancion_por_titulo(catalogo,titulo):
 
-def buscar_cancion_por_artista(artista):
+def buscar_cancion_por_artista(catalogo,artista):

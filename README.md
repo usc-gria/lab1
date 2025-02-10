@@ -22,11 +22,11 @@ Se debe crear un catálogo de canciones usando una lista de diccionarios. Cada d
 
 
 #### **Tareas:**
-1. Crear una función `agregar_cancion (titulo, artista, album, duracion)` para añadir nuevas canciones al catálogo.
-2. Crear una función `eliminar_cancion (id)` para eliminar canciones por su ID.
-3. Crear una función `buscar_cancion_por_id(id)` para buscar canciones por ID.
-4. Crear una función `buscar_canciones_por_titulo(titulo)` para buscar canciones por título (dos canciones pueden tener el mismo título).
-5. Crear una función `buscar_canciones_por_artista(artista)` para buscar las canciones de un artísta.
+1. Crear una función `agregar_cancion (catalogo,titulo, artista, album, duracion)` para añadir nuevas canciones al catálogo.
+2. Crear una función `eliminar_cancion (catalogo,id)` para eliminar canciones por su ID.
+3. Crear una función `buscar_cancion_por_id(catalogo,id)` para buscar canciones por ID.
+4. Crear una función `buscar_canciones_por_titulo(catalogo,titulo)` para buscar canciones por título (dos canciones pueden tener el mismo título).
+5. Crear una función `buscar_canciones_por_artista(catalogo,artista)` para buscar las canciones de un artísta.
 
 ---
 
