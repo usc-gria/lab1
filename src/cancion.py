@@ -1,5 +1,5 @@
 
-def agregar_cancion(catalogo,titulo, artista, album, duracion):
+def agregar_cancion(catalogo,titulo, artista, album, duracion, reproducciones):
 
 def eliminar_cancion(catalogo,id):
 
